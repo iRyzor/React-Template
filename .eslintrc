@@ -4,7 +4,7 @@
         "es6": true,
         "node": true
     },
-    "extends": ["airbnb"],
+    "extends": ["airbnb", "prettier"],
     "globals": {
         "document": false,
         "escape": false,
@@ -18,8 +18,9 @@
         "sinon": true
     },
     "parser": "babel-eslint",
-    "plugins": ["react", "jsx-a11y", "import"],
+    "plugins": ["react", "jsx-a11y", "import", "prettier"],
     "rules": {
+        "prettier/prettier": ["error"],
         "react/jsx-filename-extension": 0,
         "array-bracket-spacing": 2,
         "arrow-body-style": 0,
